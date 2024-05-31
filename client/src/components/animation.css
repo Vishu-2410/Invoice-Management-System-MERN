@@ -1,0 +1,150 @@
+/* animations.css */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideIn {
+    0% { opacity: 0; transform: translateX(-100%); }
+    100% { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes buttonHover {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+  }
+  
+  @keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(-45deg, #604385, #79559b, #b369db, #cba0ff);
+    /* background-size: 400% 400%; */
+    animation: gradientBackground 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .App {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow:auto;
+    padding: 20px;
+  }
+  
+  form label {
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  form input, form button {
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 90%;
+  }
+  
+  form input:focus, form button:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25);
+  }
+  
+  form button {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out;
+    background-size: 200% 200%;
+    border: none;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  form button:hover {
+    animation: buttonHover 0.3s forwards;
+  }
+  
+  .invoice-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+  
+  }
+  
+  .invoice-item h3 {
+    margin: 0 0 10px 0;
+  }
+  
+  .invoice-item button {
+    margin-right: 5px;
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .invoice-item button.print-btn {
+    background: linear-gradient(45deg, #42e695, #3bb2b8);
+    color: white;
+  }
+  
+  .invoice-item button.print-btn:hover {
+    background: linear-gradient(45deg, #3bb2b8, #42e695);
+  }
+  
+  .invoice-item button.bill-btn {
+    background: linear-gradient(45deg, #f8ff00, #3ad59f);
+    color: black;
+  }
+  
+  .invoice-item button.bill-btn:hover {
+    background: linear-gradient(45deg, #3ad59f, #f8ff00);
+  }
+  
+  .invoice-item button.delete-btn {
+    background: linear-gradient(45deg, #ff0844, #ffb199);
+    color: white;
+  }
+  
+  .invoice-item button.delete-btn:hover {
+    background: linear-gradient(45deg, #ffb199, #ff0844);
+  }
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,189 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+   background: url("https://img.freepik.com/free-photo/contemporary-coffee-shop-with-modern-elegance-design-generative-ai_188544-12379.jpg"), rgba(72, 72, 252, 0.3); 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  position: relative;
+  /* left: 25%; */
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  /* gap: 100px; */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #fff;
+}
+
+.form {
+  position: relative;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to top, #a5a4d7 0%, #8686c6 52%, #8989ba 100%);
+  height: auto;
+  width: 90vh;
+  padding: 20px;
+  right: 70%;
+}
+
+
+.form h2 {
+  color: white;
+}
+
+input {
+  background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+  width: 300px;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  gap: 20px;
+  margin: 7px 6px;
+  border-radius: 5px;
+ 
+}
+
+.form input:focus {
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   }
+
+.item input[type="number"] {
+  text-align: right;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 2px;
+
+}
+
+.printbtn {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  color: black;
+}
+
+.totalbtn {
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  color: black;
+}
+
+.deletebtn {
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+  background-blend-mode: screen;
+  color: black;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.customer-section {
+  position: relative;
+  left: 35%;
+  margin-bottom: 20px;
+  background-color: rgba(221, 210, 231, 0.6);
+  padding: 10px;
+  width: 300px;
+  border: 1px solid transparent;
+  border-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #35eb93 100%);
+  animation: slideIn 0.5s ease-in-out;
+  border-image-slice: 1;
+
+}
+
+.customer-section:hover {
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+
+}
+
+.customer-section h3 {
+
+  margin: 0;
+  padding: 5px;
+  background: -webkit-linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  /* background: -webkit-linear-gradient(to right, #ec77ab 0%, #7873f5 100%); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-image: background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%); */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+.customer-invoices h2 {
+  position: relative;
+  left: 35%;
+}
+
+.invoice-actions {
+  display: flex;
+}
+
+.invoice-actions button {
+  margin-right: 10px;
+}
+
+.invoice-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.invoice-details p {
+  margin: 5px 0;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.invoice-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  animation: slideIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: linear-gradient(45deg, #ab7edb, #84a8e5);
+
+}
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-100%); }
+  100% { opacity: 1; transform: translateX(0); }
+}
